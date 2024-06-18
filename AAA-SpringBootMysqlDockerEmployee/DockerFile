@@ -1,0 +1,5 @@
+FROM openjdk:11
+LABEL maintainer="amit Attri"
+COPY target/EmployeeApiNew.jar EmployeeApiNew.jar
+ENTRYPOINT ["java","-jar","EmployeeApiNew.jar"]
+

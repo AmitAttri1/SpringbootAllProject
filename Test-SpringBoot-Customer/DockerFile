@@ -1,0 +1,4 @@
+FROM openjdk:11
+LABEL maintainer="Amit"
+COPY target/customer-springboot.jar  customer-springboot.jar
+ENTRYPOINT [ "java","-jar","customer-springboot.jar" ]

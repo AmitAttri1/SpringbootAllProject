@@ -1,0 +1,4 @@
+FROM openjdk:11
+LABEL maintainer="Amit"
+COPY target/employee-app.jar employee-app.jar
+ENTRYPOINT [ "java","-jar","employee-app.jar" ]
